@@ -20,3 +20,21 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+// comment route
+Route::resource('comment', 'Comment\CommentController');
+
+// Companies Route
+Route::resource('companies', 'Companies\CompaniesController');
+
+// project route
+Route::resource('project', 'Project\ProjectController');
+
+// role route
+Route::resource('role', 'Role\RoleController');
+
+// task route
+Route::resource('task', 'Task\TaskController');
+
+// user route
+Route::resource('user', 'User\UserController');
